@@ -1,3 +1,9 @@
+ffmpeg (7:6.1.1-2deepin1) unstable; urgency=medium
+
+  * add spacemit video codec support
+
+ -- Chang Yang <yangchang@deepin.org>  Tue, 25 Jun 2024 15:19:52 +0800
+
 ffmpeg (7:6.1.1-2) unstable; urgency=medium
 
   * debian/patches: Fix compilation with glslang 14 (Closes: #1064740)

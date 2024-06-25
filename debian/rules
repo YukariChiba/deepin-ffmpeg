@@ -79,7 +79,8 @@ CONFIG := --prefix=/usr \
 	--enable-openal \
 	--enable-opencl \
 	--enable-opengl \
-	--enable-sdl2
+	--enable-sdl2 \
+        --enable-libxavs2
 
 # disable sndio, it's pulled in via libopenal-dev and autodetected
 CONFIG += --disable-sndio
@@ -87,6 +88,12 @@ CONFIG += --disable-sndio
 # avoid libjxl on alpha for now
 ifneq (alpha,$(DEB_HOST_ARCH))
 	CONFIG += --enable-libjxl
+endif
+
+# use spacemit_mpp on riscv64 for now
+ifeq (riscv64,$(DEB_HOST_ARCH))
+        CONFIG += --extra-libs=-lspacemit_mpp \
+                --enable-stcodec
 endif
 
 # avoid pocketsphinx on mips (bug#812335), alpha, ia64 and big-endian (bug#968456)
