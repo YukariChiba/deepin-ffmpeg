@@ -1,3 +1,9 @@
+ffmpeg (7:6.1.1-2deepin1) unstable; urgency=medium
+
+  * add support for eswin audio codec
+
+ -- Chang Yang <yangchang@deepin.org>  Tue, 27 Aug 2024 16:15:28 +0800
+
 ffmpeg (7:6.1.1-2) unstable; urgency=medium
 
   * debian/patches: Fix compilation with glslang 14 (Closes: #1064740)
