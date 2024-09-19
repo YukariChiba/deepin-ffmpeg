@@ -201,7 +201,8 @@ Build-Depends:
 # assembler optimizations
  nasm,
 # autodetected zlib
- zlib1g-dev
+ zlib1g-dev,
+ th1520-vpu
 
 Package: ffmpeg
 Architecture: any
@@ -247,7 +248,8 @@ Section: libs
 Multi-Arch: same
 Depends:
  ${shlibs:Depends},
- ${misc:Depends}
+ ${misc:Depends},
+ th1520-vpu
 Suggests:
  libcuda1 [amd64 arm64 i386],
  libnvcuvid1 [amd64 arm64 i386],
@@ -276,7 +278,8 @@ Conflicts: libavcodec60
 Provides: libavcodec60 (= ${binary:Version})
 Depends:
  ${shlibs:Depends},
- ${misc:Depends}
+ ${misc:Depends},
+ th1520-vpu
 Suggests:
  libcuda1 [amd64 arm64 i386],
  libnvcuvid1 [amd64 arm64 i386],

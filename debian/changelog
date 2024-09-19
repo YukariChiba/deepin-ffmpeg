@@ -1,3 +1,9 @@
+ffmpeg (7:6.1.1-2deepin1) unstable; urgency=medium
+
+  * add patch from zhihe
+
+ -- Chang Yang <yangchang@deepin.org>  Thu, 19 Sep 2024 20:45:21 +0800
+
 ffmpeg (7:6.1.1-2) unstable; urgency=medium
 
   * debian/patches: Fix compilation with glslang 14 (Closes: #1064740)
